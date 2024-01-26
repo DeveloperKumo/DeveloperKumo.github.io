@@ -17,7 +17,7 @@
             </li>
             <div class="divider divider-horizontal"></div>
             <li class="flex text-indigo-50 no-underline text-base md:text-2xl lg:text-4xl">
-                <a class="" href="/projects.html">Projects</a>
+                <a class="" href="projects.html">Projects</a>
             </li>
             <div class="divider divider-horizontal"></div>
 
@@ -27,13 +27,14 @@
             <div class="divider divider-horizontal"></div>
 
             <li class="flex text-indigo-50 no-underline text-base md:text-2xl lg:text-4xl">
-                <a class="" href="/contact.html">Contact</a>
+                <a class="" hx-get="/contact" hx-trigger="click" hx-target="#main_content" hx-swap="outerHTML">Contact</a>
             </li>
         </ul>
     </div>
 
     </div>
-    <div class="my-8 relative">
+
+    <div class="my-8 relative" id="main_content">
         <div class="box-content max-w-7xl float-right col-span-4 grid w-3/4 p-16 justify-center bg-indigo-100 shadow-lg">
             <h1 class="text-4xl my-0">Hello</h1>
 
