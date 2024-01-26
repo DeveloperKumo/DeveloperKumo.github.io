@@ -1,0 +1,42 @@
+.steps .step {
+  grid-template-rows: 2.5rem 1fr;
+  grid-template-columns: auto;
+  min-width: 4rem;
+}
+.steps .step:before {
+  @apply bg-base-300 text-base-content top-0 col-start-1 row-start-1 h-2 w-full transform;
+  content: "";
+  margin-inline-start: -100%;
+}
+.steps .step:after {
+  content: counter(step);
+  counter-increment: step;
+  z-index: 1;
+  @apply bg-base-300 text-base-content relative col-start-1 row-start-1 grid h-8 w-8 place-items-center place-self-center rounded-full;
+}
+.steps .step:first-child:before {
+  content: none;
+}
+.steps .step[data-content]:after {
+  content: attr(data-content);
+}
+.steps .step-primary + .step-primary:before, .steps .step-primary:after {
+  @apply bg-primary text-primary-content;
+  @apply bg-primary text-primary-content;
+}
+.steps .step-success + .step-success:before, .steps .step-success:after {
+  @apply bg-success text-success-content;
+  @apply bg-success text-success-content;
+}
+.steps .step-warning + .step-warning:before, .steps .step-warning:after {
+  @apply bg-warning text-warning-content;
+  @apply bg-warning text-warning-content;
+}
+.steps .step-error + .step-error:before, .steps .step-error:after {
+  @apply bg-error text-error-content;
+  @apply bg-error text-error-content;
+}
+.steps .step-neutral + .step-neutral:before, .steps .step-neutral:after {
+  @apply bg-neutral text-neutral-content;
+  @apply bg-neutral text-neutral-content;
+}

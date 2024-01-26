@@ -1,0 +1,12 @@
+.drawer {
+  width: 100%;
+}
+.drawer-side > .drawer-overlay {
+  @apply cursor-pointer bg-transparent transition-colors duration-200 ease-out;
+}
+.drawer-toggle:checked ~ .drawer-side > .drawer-overlay {
+  background-color: #0006;
+}
+.drawer-toggle:focus-visible ~ .drawer-content label.drawer-button {
+  @apply outline outline-2 outline-offset-2;
+}

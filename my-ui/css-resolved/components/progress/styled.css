@@ -1,0 +1,83 @@
+.progress {
+  height: 0.5rem;
+  border-radius: var(--ice-rounded-box, 1rem);
+  background-color: rgba(var(--ice-base-content) / 0.2);
+}
+.progress::-moz-progress-bar {
+  border-radius: var(--ice-rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-base-content) / var(--tw-bg-opacity));
+}
+.progress::-webkit-progress-bar {
+  border-radius: var(--ice-rounded-box, 1rem);
+  background-color: transparent;
+}
+.progress::-webkit-progress-value {
+  border-radius: var(--ice-rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-base-content) / var(--tw-bg-opacity));
+}
+.progress:indeterminate {
+  background-image: repeating-linear-gradient( 90deg, var(--ice-progress-color) -1%, var(--ice-progress-color) 10%, transparent 10%, transparent 90% );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+.progress:indeterminate::-moz-progress-bar {
+  background-color: transparent;
+  background-image: repeating-linear-gradient( 90deg, var(--ice-progress-color) -1%, var(--ice-progress-color) 10%, transparent 10%, transparent 90% );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+.progress-primary::-moz-progress-bar {
+  border-radius: var(--ice-rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-primary) / var(--tw-bg-opacity));
+}
+.progress-success::-moz-progress-bar {
+  border-radius: var(--ice-rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-success) / var(--tw-bg-opacity));
+}
+.progress-warning::-moz-progress-bar {
+  border-radius: var(--ice-rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-warning) / var(--tw-bg-opacity));
+}
+.progress-error::-moz-progress-bar {
+  border-radius: var(--ice-rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-error) / var(--tw-bg-opacity));
+}
+.progress-neutral::-moz-progress-bar {
+  border-radius: var(--ice-rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-neutral) / var(--tw-bg-opacity));
+}
+.progress-primary::-webkit-progress-value {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-primary) / var(--tw-bg-opacity));
+}
+.progress-success::-webkit-progress-value {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-success) / var(--tw-bg-opacity));
+}
+.progress-warning::-webkit-progress-value {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-warning) / var(--tw-bg-opacity));
+}
+.progress-error::-webkit-progress-value {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-error) / var(--tw-bg-opacity));
+}
+.progress-neutral::-webkit-progress-value {
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-neutral) / var(--tw-bg-opacity));
+}
+
+@keyframes progress-loading {
+  50% {
+    background-position-x: -115%;
+  }
+}

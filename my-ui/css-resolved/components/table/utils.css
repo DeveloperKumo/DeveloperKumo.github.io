@@ -1,0 +1,71 @@
+.table-xs :not(thead):not(tfoot) tr {
+
+    font-size: 0.75rem;
+
+    line-height: 1rem
+}
+
+.table-xs :where(th,td) {
+
+    padding-left: 0.5rem;
+
+    padding-right: 0.5rem;
+
+    padding-top: 0.25rem;
+
+    padding-bottom: 0.25rem
+}
+
+.table-sm :not(thead):not(tfoot) tr {
+
+    font-size: 0.875rem;
+
+    line-height: 1.25rem
+}
+
+.table-sm :where(th,td) {
+
+    padding-left: 0.75rem;
+
+    padding-right: 0.75rem;
+
+    padding-top: 0.5rem;
+
+    padding-bottom: 0.5rem
+}
+
+.table-md :not(thead):not(tfoot) tr {
+
+    font-size: 0.875rem;
+
+    line-height: 1.25rem
+}
+
+.table-md :where(th,td) {
+
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+    padding-top: 0.75rem;
+
+    padding-bottom: 0.75rem
+}
+
+.table-lg :not(thead):not(tfoot) tr {
+
+    font-size: 1rem;
+
+    line-height: 1.5rem
+}
+
+.table-lg :where(th,td) {
+
+    padding-left: 1.5rem;
+
+    padding-right: 1.5rem;
+
+    padding-top: 1rem;
+
+    padding-bottom: 1rem
+}

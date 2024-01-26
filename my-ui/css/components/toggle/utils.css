@@ -1,0 +1,16 @@
+.toggle-xs {
+  @apply h-4 w-6;
+  --ice-handleoffset: 0.5rem;
+}
+.toggle-sm {
+  @apply h-5 w-8;
+  --ice-handleoffset: 0.75rem;
+}
+.toggle-md {
+  @apply h-6 w-12;
+  --ice-handleoffset: 1.5rem;
+}
+.toggle-lg {
+  @apply h-8 w-16;
+  --ice-handleoffset: 2rem;
+}

@@ -1,0 +1,11 @@
+.avatar-group {
+    display: flex;
+    overflow: hidden
+}
+.avatar-group :where(.avatar) {
+    overflow: hidden;
+    border-radius: 9999px;
+    border-width: 4px;
+    --tw-border-opacity: 1;
+    border-color: rgba(var(--ice-base-100) / var(--tw-border-opacity))
+}

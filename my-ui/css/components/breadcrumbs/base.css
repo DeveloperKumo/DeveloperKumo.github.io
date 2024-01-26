@@ -1,0 +1,13 @@
+.breadcrumbs {
+  @apply max-w-full overflow-x-auto;
+}
+.breadcrumbs > ul, .breadcrumbs > ol {
+  @apply flex items-center whitespace-nowrap;
+  min-height: min-content;
+}
+.breadcrumbs > ul > li, .breadcrumbs > ol > li {
+  @apply flex items-center;
+}
+.breadcrumbs > ul > li > a, .breadcrumbs > ol > li > a {
+  @apply flex cursor-pointer items-center [@media(hover:hover)]:hover:underline;
+}

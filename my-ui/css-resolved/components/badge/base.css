@@ -1,0 +1,15 @@
+.badge {
+  display: inline-flex;
+  height: 1.25rem;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  padding-left: 0.563rem;
+  padding-right: 0.563rem
+}

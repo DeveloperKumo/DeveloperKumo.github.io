@@ -1,0 +1,9 @@
+.input {
+    height: 3rem;
+    flex-shrink: 1;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    line-height: 2
+}

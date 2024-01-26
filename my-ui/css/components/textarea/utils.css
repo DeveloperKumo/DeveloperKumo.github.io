@@ -1,0 +1,12 @@
+.textarea-xs {
+  @apply px-2 py-1 text-xs leading-relaxed;
+}
+.textarea-sm {
+  @apply px-3 py-1 text-sm leading-8;
+}
+.textarea-md {
+  @apply px-4 py-3 text-sm leading-loose;
+}
+.textarea-lg {
+  @apply px-6 py-4 text-lg leading-loose;
+}

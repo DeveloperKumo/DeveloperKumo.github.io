@@ -1,0 +1,24 @@
+.table {
+  @apply rounded-box text-left text-sm;
+}
+.table :where(th, td) {
+  @apply px-4 py-3 align-middle;
+}
+.table tr.active, .table tr.active:nth-child(even), .table-zebra tbody tr:nth-child(even) {
+  @apply bg-base-200;
+}
+.table tr.hover, .table tr.hover:nth-child(even) {
+  @apply [@media(hover:hover)]:hover:bg-base-200;
+}
+.table-zebra tr.active, .table-zebra tr.active:nth-child(even), .table-zebra-zebra tbody tr:nth-child(even) {
+  @apply bg-base-300;
+}
+.table-zebra tr.hover, .table-zebra tr.hover:nth-child(even) {
+  @apply [@media(hover:hover)]:hover:bg-base-300;
+}
+.table :where(thead, tbody) :where(tr:not(:last-child)), .table :where(thead, tbody) :where(tr:first-child:last-child) {
+  @apply border-b-base-200 border-b;
+}
+.table :where(thead, tfoot) {
+  @apply text-base-content/60 whitespace-nowrap text-xs font-bold;
+}

@@ -1,0 +1,14 @@
+.stats-horizontal {grid-auto-flow: column
+}.stats-horizontal>:not([hidden])~:not([hidden]) {--tw-divide-x-reverse: 0;border-right-width: calc(1px * var(--tw-divide-x-reverse));border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));--tw-divide-y-reverse: 0;border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width: calc(0px * var(--tw-divide-y-reverse))
+}.stats-horizontal {overflow-x: auto
+}:is(:where([dir="rtl"]) .stats-horizontal) {--tw-divide-x-reverse: 1
+}
+
+.stats-vertical {grid-auto-flow: row
+}
+
+.stats-vertical>:not([hidden])~:not([hidden]) {--tw-divide-x-reverse: 0;border-right-width: calc(0px * var(--tw-divide-x-reverse));border-left-width: calc(0px * calc(1 - var(--tw-divide-x-reverse)));--tw-divide-y-reverse: 0;border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width: calc(1px * var(--tw-divide-y-reverse))
+}
+
+.stats-vertical {overflow-y: auto
+}

@@ -1,0 +1,12 @@
+.divider {
+  @apply flex flex-row items-center self-stretch;
+}
+.divider:before, .divider:after {
+  @apply h-0.5 w-full flex-grow content-[''];
+}
+.divider-start:before {
+  @apply hidden;
+}
+.divider-end:after {
+  @apply hidden;
+}

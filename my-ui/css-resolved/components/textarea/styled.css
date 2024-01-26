@@ -1,0 +1,84 @@
+.textarea {
+  border-radius: var(--ice-rounded-btn, 0.5rem);
+  border-width: 1px;
+  border-color: transparent;
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-base-100) / var(--tw-bg-opacity))
+}
+.textarea-bordered {
+  border-color: rgba(var(--ice-base-content) / 0.2)
+}
+.textarea:focus {
+  border-color: rgba(var(--ice-base-content) / 0.2);
+  outline-style: solid;
+  outline-width: 2px;
+  outline-offset: 2px;
+  outline-color: rgba(var(--ice-base-content) / 0.2);
+  box-shadow: none
+}
+.textarea-ghost {
+  --tw-bg-opacity: 0.05
+}
+.textarea-ghost:focus {
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  color: rgba(var(--ice-base-content) / var(--tw-text-opacity));
+  box-shadow: none
+}
+.textarea-primary {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-primary) / var(--tw-border-opacity))
+}
+.textarea-primary:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-primary) / var(--tw-border-opacity));
+  outline-color: rgba(var(--ice-primary) / 1)
+}
+.textarea-success {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-success) / var(--tw-border-opacity))
+}
+.textarea-success:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-success) / var(--tw-border-opacity));
+  outline-color: rgba(var(--ice-success) / 1)
+}
+.textarea-warning {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-warning) / var(--tw-border-opacity))
+}
+.textarea-warning:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-warning) / var(--tw-border-opacity));
+  outline-color: rgba(var(--ice-warning) / 1)
+}
+.textarea-error {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-error) / var(--tw-border-opacity))
+}
+.textarea-error:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-error) / var(--tw-border-opacity));
+  outline-color: rgba(var(--ice-error) / 1)
+}
+.textarea-neutral {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-neutral) / var(--tw-border-opacity))
+}
+.textarea-neutral:focus {
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-neutral) / var(--tw-border-opacity));
+  outline-color: rgba(var(--ice-neutral) / 1)
+}
+.textarea-disabled,.textarea:disabled,.textarea[disabled] {
+  cursor: not-allowed;
+  --tw-border-opacity: 1;
+  border-color: rgba(var(--ice-base-200) / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-base-200) / var(--tw-bg-opacity));
+  --tw-text-opacity: 0.2
+}
+.textarea-disabled::placeholder,.textarea:disabled::placeholder,.textarea[disabled]::placeholder {
+  color: rgba(var(--ice-base-content) / var(--tw-placeholder-opacity));
+  --tw-placeholder-opacity: 0.2
+}

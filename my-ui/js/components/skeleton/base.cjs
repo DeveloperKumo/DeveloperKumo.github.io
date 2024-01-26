@@ -1,0 +1,10 @@
+module.exports = {
+  ".skeleton": {
+    "animation": "skeleton-blink var(--ice-skeleton-duration) ease-in-out infinite"
+  },
+  "@keyframes skeleton-blink": {
+    "50%": {
+      "opacity": 0.6
+    }
+  }
+}

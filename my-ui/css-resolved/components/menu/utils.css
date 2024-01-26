@@ -1,0 +1,101 @@
+.menu-horizontal {
+  display: inline-flex;
+  flex-direction: row;
+}
+.menu-horizontal>li:not(.menu-title)>details>ul {
+  position: absolute;
+  margin-inline-start: 0px;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-inline-end: 0.5rem;
+}
+.menu-horizontal>li>details>ul:before {
+  content: none;
+}
+
+.menu-vertical {
+  display: flex;
+  flex-direction: column;
+}
+.menu-vertical>li:not(.menu-title)>details>ul {
+  position: relative;
+  margin-inline-start: 1rem;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-inline-end: 0px;
+}
+
+:where(.menu-horizontal>li:not(.menu-title)>details>ul) {
+  border-radius: var(--ice-rounded-box, 1rem);
+  --tw-bg-opacity: 1;
+  background-color: rgba(var(--ice-base-100) / var(--tw-bg-opacity));
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.menu-xs :where(li:not(.menu-title)>*:not(ul):not(details):not(.menu-title)),.menu-xs :where(li:not(.menu-title)>details>summary:not(.menu-title)) {
+  border-radius: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+.menu-xs .menu-title {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.menu-sm :where(li:not(.menu-title)>*:not(ul):not(details):not(.menu-title)),.menu-sm :where(li:not(.menu-title)>details>summary:not(.menu-title)) {
+  border-radius: var(--ice-rounded-btn, 0.5rem);
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.menu-sm .menu-title {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.menu-md :where(li:not(.menu-title)>*:not(ul):not(details):not(.menu-title)),.menu-md :where(li:not(.menu-title)>details>summary:not(.menu-title)) {
+  border-radius: var(--ice-rounded-btn, 0.5rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.menu-md .menu-title {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.menu-lg :where(li:not(.menu-title)>*:not(ul):not(details):not(.menu-title)),.menu-lg :where(li:not(.menu-title)>details>summary:not(.menu-title)) {
+  border-radius: var(--ice-rounded-btn, 0.5rem);
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.menu-lg .menu-title {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}

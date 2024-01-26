@@ -1,0 +1,10 @@
+.link {
+    cursor: pointer;
+    text-decoration-line: underline
+}
+.link-hover {
+    text-decoration-line: none
+}
+.link-hover:hover {
+    text-decoration-line: underline
+}

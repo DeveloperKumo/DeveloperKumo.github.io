@@ -1,0 +1,8 @@
+.btn {
+  @apply rounded-btn inline-flex flex-shrink-0 cursor-pointer select-none flex-wrap items-center justify-center border-transparent text-center transition duration-200 ease-out min-h-12 h-12 px-4;
+  line-height: 1em;
+  font-size: 0.875rem;
+}
+.btn-disabled, .btn[disabled], .btn:disabled {
+  @apply pointer-events-none cursor-not-allowed;
+}

@@ -1,0 +1,11 @@
+.skeleton-title {
+  @apply w-2/5 h-4;
+}
+
+.skeleton-paragraph {
+  @apply w-full h-4;
+}
+
+.skeleton-avatar {
+  @apply h-8 w-8 rounded-full;
+}

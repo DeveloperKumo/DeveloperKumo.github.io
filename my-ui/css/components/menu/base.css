@@ -1,0 +1,24 @@
+.menu {
+  @apply flex flex-col flex-wrap text-sm;
+}
+.menu :where(li ul) {
+  @apply relative whitespace-nowrap;
+}
+.menu :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)), .menu :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  @apply grid grid-flow-col content-start items-center gap-2;
+  grid-auto-columns: minmax(auto, max-content) auto max-content;
+  user-select: none;
+}
+.menu li.disabled {
+  @apply cursor-not-allowed select-none;
+}
+.menu :where(li > .menu-dropdown:not(.menu-dropdown-show)) {
+  @apply hidden;
+}
+
+:where(.menu li) {
+  @apply relative flex shrink-0 flex-col flex-wrap items-stretch;
+}
+:where(.menu li) .badge {
+  @apply justify-self-end;
+}

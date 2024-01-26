@@ -1,0 +1,11 @@
+.join {
+    border-radius: var(--ice-rounded-btn, 0.5rem)
+}
+.join>:where(*:not(:first-child)) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-inline-start: -1px
+}
+.join-item:focus {
+    isolation: isolate
+}

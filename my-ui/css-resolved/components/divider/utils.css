@@ -1,0 +1,35 @@
+.divider-horizontal {
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: auto;
+    width: 1rem
+}
+.divider-horizontal:before {
+    height: 100%;
+    width: 0.125rem
+}
+.divider-horizontal:after {
+    height: 100%;
+    width: 0.125rem
+}
+
+.divider-vertical {
+    flex-direction: row;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 1rem;
+    width: auto
+}
+.divider-vertical:before {
+    height: 0.125rem;
+    width: 100%
+}
+.divider-vertical:after {
+    height: 0.125rem;
+    width: 100%
+}

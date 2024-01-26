@@ -1,0 +1,24 @@
+.divider {
+  @apply my-4 h-4 whitespace-nowrap;
+}
+.divider:before, .divider:after {
+  @apply bg-base-content/10;
+}
+.divider:not(:empty) {
+  @apply gap-4;
+}
+.divider-primary:before, .divider-primary:after {
+  @apply bg-primary;
+}
+.divider-success:before, .divider-success:after {
+  @apply bg-success;
+}
+.divider-warning:before, .divider-warning:after {
+  @apply bg-warning;
+}
+.divider-error:before, .divider-error:after {
+  @apply bg-error;
+}
+.divider-neutral:before, .divider-neutral:after {
+  @apply bg-neutral;
+}

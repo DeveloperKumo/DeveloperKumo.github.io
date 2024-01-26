@@ -1,0 +1,7 @@
+.select {
+  @apply inline-flex cursor-pointer select-none appearance-none;
+  @apply h-12 min-h-[3rem] pl-4 pr-10 text-sm leading-loose;
+}
+.select[multiple] {
+  @apply h-auto;
+}

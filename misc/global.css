@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.lg\:hidden {
+  -webkit-display: none !important;
+  display: none !important;
+}

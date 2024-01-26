@@ -1,0 +1,18 @@
+.drawer-open > .drawer-toggle {
+  @apply hidden;
+}
+.drawer-open > .drawer-toggle ~ .drawer-side {
+  @apply pointer-events-auto visible sticky block w-auto overscroll-auto;
+}
+.drawer-open > .drawer-toggle ~ .drawer-side > *:not(.drawer-overlay) {
+  transform: translateX(0%);
+}
+[dir=rtl] .drawer-open > .drawer-toggle ~ .drawer-side > *:not(.drawer-overlay) {
+  transform: translateX(0%);
+}
+.drawer-open > .drawer-toggle ~ .drawer-side > .drawer-overlay {
+  @apply cursor-default bg-transparent;
+}
+.drawer-open > .drawer-toggle:checked ~ .drawer-side {
+  @apply pointer-events-auto visible;
+}

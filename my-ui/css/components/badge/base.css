@@ -1,0 +1,5 @@
+.badge {
+  @apply inline-flex items-center justify-center transition duration-200 ease-out w-[fit-content] h-5 text-sm leading-5;
+  padding-left: 0.563rem;
+  padding-right: 0.563rem;
+}

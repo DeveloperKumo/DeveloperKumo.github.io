@@ -1,0 +1,50 @@
+.textarea {
+  @apply bg-base-100 rounded-btn border border-transparent;
+}
+.textarea-bordered {
+  @apply border-base-content/20;
+}
+.textarea:focus {
+  @apply border-base-content/20 outline-base-content/20 outline outline-2 outline-offset-2;
+  box-shadow: none;
+}
+.textarea-ghost {
+  @apply bg-opacity-5;
+}
+.textarea-ghost:focus {
+  @apply text-base-content bg-opacity-100;
+  box-shadow: none;
+}
+.textarea-primary {
+  @apply border-primary;
+}
+.textarea-primary:focus {
+  @apply outline-primary border-primary;
+}
+.textarea-success {
+  @apply border-success;
+}
+.textarea-success:focus {
+  @apply outline-success border-success;
+}
+.textarea-warning {
+  @apply border-warning;
+}
+.textarea-warning:focus {
+  @apply outline-warning border-warning;
+}
+.textarea-error {
+  @apply border-error;
+}
+.textarea-error:focus {
+  @apply outline-error border-error;
+}
+.textarea-neutral {
+  @apply border-neutral;
+}
+.textarea-neutral:focus {
+  @apply outline-neutral border-neutral;
+}
+.textarea-disabled, .textarea:disabled, .textarea[disabled] {
+  @apply border-base-200 bg-base-200 placeholder-base-content cursor-not-allowed text-opacity-20 placeholder-opacity-20;
+}

@@ -1,0 +1,17 @@
+.form-control {
+
+    display: flex;
+
+    flex-direction: column
+}
+
+.label {
+
+    display: flex;
+
+    user-select: none;
+
+    align-items: center;
+
+    justify-content: space-between
+}

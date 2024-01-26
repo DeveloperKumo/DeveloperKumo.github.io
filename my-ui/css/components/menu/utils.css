@@ -1,0 +1,50 @@
+.menu-horizontal {
+  @apply inline-flex flex-row;
+}
+.menu-horizontal > li:not(.menu-title) > details > ul {
+  @apply absolute;
+  @apply ms-0 mt-4 py-2 pe-2;
+}
+.menu-horizontal > li > details > ul:before {
+  content: none;
+}
+
+.menu-vertical {
+  @apply flex flex-col;
+}
+.menu-vertical > li:not(.menu-title) > details > ul {
+  @apply relative;
+  @apply ms-4 mt-0 py-0 pe-0;
+}
+
+:where(.menu-horizontal > li:not(.menu-title) > details > ul) {
+  @apply bg-base-100 rounded-box shadow-xl;
+}
+
+.menu-xs :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)), .menu-xs :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  @apply rounded px-2 py-1 text-xs;
+}
+.menu-xs .menu-title {
+  @apply px-2 py-1;
+}
+
+.menu-sm :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)), .menu-sm :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  @apply rounded-btn px-3 py-1 text-sm;
+}
+.menu-sm .menu-title {
+  @apply px-3 py-2;
+}
+
+.menu-md :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)), .menu-md :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  @apply rounded-btn px-4 py-2 text-sm;
+}
+.menu-md .menu-title {
+  @apply px-4 py-2;
+}
+
+.menu-lg :where(li:not(.menu-title) > *:not(ul):not(details):not(.menu-title)), .menu-lg :where(li:not(.menu-title) > details > summary:not(.menu-title)) {
+  @apply rounded-btn px-6 py-3 text-lg;
+}
+.menu-lg .menu-title {
+  @apply px-6 py-3;
+}

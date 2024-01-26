@@ -1,0 +1,27 @@
+.stats {
+  @apply bg-base-100 text-base-content rounded-box;
+}
+
+:where(.stats) {
+  @apply divide-x divide-y-0 overflow-x-auto;
+}
+
+:is([dir=rtl] .stats > :not([hidden]) ~ :not([hidden])) {
+  --tw-divide-x-reverse: 1;
+}
+
+.stat {
+  @apply border-base-content gap-x-4 border-opacity-10 px-6 py-4;
+}
+.stat-title {
+  @apply text-base-content/60;
+}
+.stat-value {
+  @apply text-4xl font-extrabold;
+}
+.stat-desc {
+  @apply text-base-content/60 text-xs;
+}
+.stat-actions {
+  @apply mt-4;
+}

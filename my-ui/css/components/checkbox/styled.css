@@ -1,0 +1,88 @@
+.checkbox {
+  @apply border-base-content rounded-btn h-6 w-6 cursor-pointer appearance-none border border-opacity-20;
+  --ice-chkbg: var(--ice-base-content);
+  --ice-chkfg: var(--ice-base-400);
+}
+.checkbox:focus-visible {
+  @apply outline-base-content outline outline-2 outline-offset-2;
+}
+.checkbox:checked, .checkbox[checked=true], .checkbox[aria-checked=true] {
+  @apply bg-base-content bg-no-repeat;
+  animation: checkmark var(--ice-animation-input, 0.2s) ease-out;
+  background-image: linear-gradient(-45deg, transparent 65%, rgba(var(--ice-chkbg)) 65.99%), linear-gradient(45deg, transparent 75%, rgba(var(--ice-chkbg)) 75.99%), linear-gradient(-45deg, rgba(var(--ice-chkbg)) 40%, transparent 40.99%), linear-gradient( 45deg, rgba(var(--ice-chkbg)) 30%, rgba(var(--ice-chkfg)) 30.99%, rgba(var(--ice-chkfg)) 40%, transparent 40.99% ), linear-gradient(-45deg, rgba(var(--ice-chkfg)) 50%, rgba(var(--ice-chkbg)) 50.99%);
+}
+.checkbox:indeterminate {
+  @apply bg-base-content bg-no-repeat;
+  animation: checkmark var(--ice-animation-input, 0.2s) ease-out;
+  background-image: linear-gradient(90deg, transparent 80%, rgba(var(--ice-chkbg)) 80%), linear-gradient(-90deg, transparent 80%, rgba(var(--ice-chkbg)) 80%), linear-gradient( 0deg, rgba(var(--ice-chkbg)) 43%, rgba(var(--ice-chkfg)) 43%, rgba(var(--ice-chkfg)) 57%, rgba(var(--ice-chkbg)) 57% );
+}
+.checkbox-primary {
+  @apply border-primary [@media(hover:hover)]:hover:border-primary;
+  --ice-chkbg: var(--ice-primary);
+  --ice-chkfg: var(--ice-primary-content);
+}
+.checkbox-primary:focus-visible {
+  @apply outline-primary;
+}
+.checkbox-primary:checked, .checkbox-primary[checked=true], .checkbox-primary[aria-checked=true] {
+  @apply border-primary bg-primary text-primary-content;
+}
+.checkbox-success {
+  @apply border-success [@media(hover:hover)]:hover:border-success;
+  --ice-chkbg: var(--ice-success);
+  --ice-chkfg: var(--ice-success-content);
+}
+.checkbox-success:focus-visible {
+  @apply outline-success;
+}
+.checkbox-success:checked, .checkbox-success[checked=true], .checkbox-success[aria-checked=true] {
+  @apply border-success bg-success text-success-content;
+}
+.checkbox-warning {
+  @apply border-warning [@media(hover:hover)]:hover:border-warning;
+  --ice-chkbg: var(--ice-warning);
+  --ice-chkfg: var(--ice-warning-content);
+}
+.checkbox-warning:focus-visible {
+  @apply outline-warning;
+}
+.checkbox-warning:checked, .checkbox-warning[checked=true], .checkbox-warning[aria-checked=true] {
+  @apply border-warning bg-warning text-warning-content;
+}
+.checkbox-error {
+  @apply border-error [@media(hover:hover)]:hover:border-error;
+  --ice-chkbg: var(--ice-error);
+  --ice-chkfg: var(--ice-error-content);
+}
+.checkbox-error:focus-visible {
+  @apply outline-error;
+}
+.checkbox-error:checked, .checkbox-error[checked=true], .checkbox-error[aria-checked=true] {
+  @apply border-error bg-error text-error-content;
+}
+.checkbox-neutral {
+  @apply border-neutral [@media(hover:hover)]:hover:border-neutral;
+  --ice-chkbg: var(--ice-neutral);
+  --ice-chkfg: var(--ice-neutral-content);
+}
+.checkbox-neutral:focus-visible {
+  @apply outline-neutral;
+}
+.checkbox-neutral:checked, .checkbox-neutral[checked=true], .checkbox-neutral[aria-checked=true] {
+  @apply border-neutral bg-neutral text-neutral-content;
+}
+.checkbox:disabled {
+  @apply bg-base-content cursor-not-allowed border-transparent opacity-20;
+}
+
+@keyframes checkmark {
+  0% {
+    background-position-y: 5px;
+  }
+  50% {
+    background-position-y: -2px;
+  }
+  100% {
+    background-position-y: 0;
+  }
+}

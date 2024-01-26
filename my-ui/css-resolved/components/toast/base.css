@@ -1,0 +1,7 @@
+.toast {
+    position: fixed;
+    display: flex;
+    min-width: fit-content;
+    flex-direction: column;
+    white-space: nowrap
+}

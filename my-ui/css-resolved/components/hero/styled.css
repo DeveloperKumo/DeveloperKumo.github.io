@@ -1,0 +1,9 @@
+.hero-overlay {
+    background-color: rgba(var(--ice-neutral) / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.5
+}
+.hero-content {
+    max-width: 80rem;
+    gap: 1rem;
+    padding: 1rem
+}

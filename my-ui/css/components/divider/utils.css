@@ -1,0 +1,21 @@
+.divider-horizontal {
+  @apply flex-col;
+  @apply mx-4 my-0 h-auto w-4;
+}
+.divider-horizontal:before {
+  @apply h-full w-0.5;
+}
+.divider-horizontal:after {
+  @apply h-full w-0.5;
+}
+
+.divider-vertical {
+  @apply flex-row;
+  @apply mx-0 my-4 h-4 w-auto;
+}
+.divider-vertical:before {
+  @apply h-0.5 w-full;
+}
+.divider-vertical:after {
+  @apply h-0.5 w-full;
+}

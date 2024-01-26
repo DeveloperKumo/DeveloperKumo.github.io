@@ -1,0 +1,24 @@
+.select-md {
+  @apply h-12 min-h-[3rem] pl-4 pr-10 text-sm leading-loose;
+}
+[dir=rtl] .select-md {
+  @apply pl-10 pr-4;
+}
+.select-lg {
+  @apply h-16 min-h-[4rem] pl-6 pr-8 text-lg leading-loose;
+}
+[dir=rtl] .select-lg {
+  @apply pl-8 pr-6;
+}
+.select-sm {
+  @apply h-8 min-h-[2rem] pl-3 pr-8 text-sm leading-8;
+}
+[dir=rtl] .select-sm {
+  @apply pl-8 pr-3;
+}
+.select-xs {
+  @apply h-6 min-h-[1.5rem] pl-2 pr-8 text-xs leading-relaxed;
+}
+[dir=rtl] .select-xs {
+  @apply pl-8 pr-2;
+}
